@@ -6,6 +6,7 @@
 	"scripts": {
 		"dev": "vite --port 3212 --open",
 		"cp": "cd scripts/commands/create-page && kotlin app.main.kts",
+		"pd": "cd scripts/commands/parse-data && kotlin app.main.kts",
 		"learn": "cd scripts/commands && php cmd-learn.php",
 		"build": "tsc && vite build",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
