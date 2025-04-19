@@ -13,7 +13,7 @@ import qstr
 
 fun main() {
     // Read lines from the flashcards.txt file
-    val lines = qfil.getLinesFromFile("../../data/flashcards.txt")
+    val lines = qfil.getLinesFromFile("../../../data/flashcards.txt")
     qcli.message("Read ${lines.size} lines from flashcards.txt")
 
     val flashcards = mutableListOf<Map<String, String>>()
@@ -46,7 +46,7 @@ fun main() {
 
     // Save flashcards to JSON file
     val jsonData = JSONArray(flashcards).toString(4) // Pretty print with 4 spaces
-    val outputFile = File("../../parseddata/flashcards.json")
+    val outputFile = File("../../../parseddata/flashcards.json")
     try {
         outputFile.writeText(jsonData)
         qcli.message("Wrote ${flashcards.size} flashcards to flashcards.json")
@@ -55,4 +55,4 @@ fun main() {
     }
 } 
 
-main() 
+main()  
