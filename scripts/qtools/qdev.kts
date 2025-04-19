@@ -16,7 +16,7 @@ class qdev {
         if (is_string($obj)) {
             echo "🛠️  " . $timestamp . " - " . $obj . PHP_EOL;
         } else {
-            var_dump($obj);
+            echo $obj;
         }
     }
-} 
+}
