@@ -1,6 +1,7 @@
 @file:Import("../../qtools/qfil.kts")
 @file:Import("../../qtools/qcli.kts")
 @file:Import("../../qtools/qstr.kts")
+@file:DependsOn("org.json:json:20210307")
 
 
 import java.io.File
@@ -52,4 +53,6 @@ fun main() {
     } catch (e: Exception) {
         qcli.message("Error writing flashcards to JSON file: ${e.message}", "error")
     }
-}     
+} 
+
+main() 
