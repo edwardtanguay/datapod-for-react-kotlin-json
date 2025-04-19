@@ -1,4 +1,4 @@
-@file:Import("QDev.kts") // Adjust the relative path to QDev.kt as needed
+@file:Import("../qtools/QDev.kts")
 
 import QDev.debug
 
