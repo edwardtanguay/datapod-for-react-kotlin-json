@@ -4,7 +4,7 @@ import java.time.format.DateTimeFormatter
 /**
  * Utility methods for development
  */
-object QDev {
+object qdev {
     /**
      * Prints a debug line with timestamp
      *

@@ -1,6 +1,6 @@
-@file:Import("../../qtools/QDev.kts")
+@file:Import("../../qtools/qdev.kts")
 
-import QDev.debug
+import qdev.debug
 
 debug("inside create-page script")
 println("this script will create a new page in the React application")
