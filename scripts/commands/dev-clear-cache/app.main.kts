@@ -1,13 +1,20 @@
 import java.io.File
 
-fun main() {
-    val filePath = "../create-page/app.main.kts"
-    val file = File(filePath)
+// this is a hack: we append a space to the end of the file to clear cache so that you can change imported files and see the changes
 
-    if (file.exists()) {
-        file.appendText(" ") // this is a hack to clear the cache so changes in imported files are acknowledged
-    } else {
-        println("File $filePath does not exist.")
+fun main() {
+    val filePaths = arrayOf(
+        "../create-page/app.main.kts",
+        "../parse-data/app.main.kts",
+    )
+
+    filePaths.forEach { path ->
+        val file = File(path)
+        if (file.exists()) {
+            file.appendText(" ") 
+        } else {
+            println("File $path does not exist.")
+        }
     }
 }
 
