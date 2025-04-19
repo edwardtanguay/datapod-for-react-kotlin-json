@@ -17,13 +17,13 @@ object qfil {
         return try {
             val file = File(filePath)
             if (!file.exists() || !file.canRead()) {
-                QCli.message("Error reading file at $filePath", "error")
+                qcli.message("Error reading file at $filePath", "error")
                 emptyList()
             } else {
                 file.readLines()
             }
         } catch (error: Exception) {
-            QCli.message("Error reading file at $filePath: ${error.message}", "error")
+            qcli.message("Error reading file at $filePath: ${error.message}", "error")
             emptyList()
         }
     }
