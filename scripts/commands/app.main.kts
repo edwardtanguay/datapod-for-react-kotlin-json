@@ -2,7 +2,5 @@
 
 import QDev.debug
 
+debug("inside create-page script")
 println("this script will create a new page in the React app")
-
-// Example usage of QDev.debug
-debug("Starting the page creation process...")
