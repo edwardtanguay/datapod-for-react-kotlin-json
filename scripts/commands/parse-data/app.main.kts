@@ -1,5 +1,5 @@
-@file:Import("../../qtools/QDev.kts")
+@file:Import("../../qtools/qstr.kts")
 
-import QDev.debug
+import qstr
 
-println("this script parse the data")
+println(qstr.generateSuuid())   
