@@ -16,6 +16,6 @@ object qcli {
             "doing" -> "⏳"
             else -> "✅"
         }
-        println("$emoji 222 $line")
+        println("$emoji  $line")
     }
 }
