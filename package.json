@@ -5,7 +5,6 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite --port 3212 --open",
-		"cp222": "cd scripts/commands && kotlin create-page.kts",
 		"cp": "cd scripts/commands && kotlin app.main.kts",
 		"learn": "cd scripts/commands && php cmd-learn.php",
 		"build": "tsc && vite build",
