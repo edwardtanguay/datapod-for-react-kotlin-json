@@ -1,16 +1,12 @@
 object learn {
-    fun showTitle(title: String) {
-        qcli.message("=== $title ===", "success")
+    fun showTitle(exNum:String, title: String) {
+        qcli.message("EX$exNum - $title", "success")
     }
 
     fun ex001() {
-        this.showTitle("Ex001")
-        qcli.message("this is ex001--008", "info")
+        this.showTitle("001", "first example")
     }
     fun ex002() {
-        qcli.message("this is ex002", "info")
-    }
-    fun ex003() {
-        qcli.message("this is ex003", "info")
+        this.showTitle("002", "second example")
     }
 }
