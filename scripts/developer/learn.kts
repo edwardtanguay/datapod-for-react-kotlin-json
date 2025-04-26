@@ -1,6 +1,7 @@
+@file:Import("../../qtools/qcli.kts")
 
 object learn {
     fun ex001() {
-        println("ex001 is here")
+        qcli.message("this is ex001", "info")
     }
 }

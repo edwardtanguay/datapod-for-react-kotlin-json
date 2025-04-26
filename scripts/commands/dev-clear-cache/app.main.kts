@@ -6,6 +6,7 @@ fun main() {
     val filePaths = arrayOf(
         "../create-page/app.main.kts",
         "../parse-data/app.main.kts",
+        "../cli-learn/app.main.kts",
     )
 
     filePaths.forEach { path ->
