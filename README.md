@@ -18,7 +18,7 @@ This is a simple datapod template for a local site that displays data from a JSO
 ## Known issues
 
 - note there is a hack in the npm statements that execute commands to clear cache, since changes in called modules were not updating unless the top file was changed
-- at one point I received this error: "error: org.jetbrains.kotlin.mainKts.Import (app.main.kts): java.lang.ClassNotFoundException: org.jetbrains.kotlin.mainKts.Import"
+- at one point I received this error: "error: org.jetbrains.kotlin.mainKts.Import (app.main.kts): java.lang.ClassNotFoundException: org.jetbrains.kotlin.mainKts.Import", this was because I realized that modules that are imported cannot further import modules. The solution is to import them in the parent module. The child module will be able to use it, see learn.kts which uses the qcli module without importing it itself.
 
 ## More Datapod templates and sites
 
