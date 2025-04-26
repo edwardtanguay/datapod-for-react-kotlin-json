@@ -9,7 +9,7 @@ import kotlin.reflect.full.declaredFunctions
 
 val exerciseNumber = args.getOrNull(0) ?: "001"
 
-qcli.message("Exercise Number: $exerciseNumber", "info")
+// qcli.message("Exercise Number: $exerciseNumber", "info")
 
 val methodName = "ex$exerciseNumber"
 val method = learn::class.declaredFunctions.find { it.name == methodName }
@@ -22,4 +22,4 @@ if (method != null) {
 
 // hack: suppress the "kotlin.Unit" (void) output
 ""
-      
+           
