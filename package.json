@@ -8,7 +8,7 @@
 		"dcc": "cd scripts/commands/dev-clear-cache && kotlin app.main.kts",
 		"cp": "npm run dcc && cd scripts/commands/create-page && kotlin app.main.kts",
 		"pd": "npm run dcc && cd scripts/commands/parse-data && kotlin app.main.kts",
-		"learn": "cd scripts/commands && php cmd-learn.php",
+		"learn": "npm run dcc && cd scripts/commands/cli-learn && kotlin app.main.kts",
 		"build": "tsc && vite build",
 		"lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
 		"preview": "vite preview",

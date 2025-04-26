@@ -3,7 +3,6 @@
 @file:Import("../../qtools/qstr.kts")
 @file:DependsOn("org.json:json:20210307")
 
-
 import java.io.File
 import org.json.JSONArray
 import org.json.JSONObject
@@ -55,4 +54,4 @@ fun main() {
     }
 } 
 
-main()    
+main()          
