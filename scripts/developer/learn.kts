@@ -1,6 +1,6 @@
 object learn {
-    fun showTitle(exNum:String, title: String) {
-        qcli.message("EX$exNum - $title", "success")
+    fun showTitle(exNum: String, title: String) {
+        qcli.message("EX$exNum - ${title.uppercase()}", "success") // Convert title to uppercase
     }
 
     fun ex001() {
